@@ -5,3 +5,4 @@ score(sacks) = intersect(sacks...) |> only |> priority
 
 ans₁ = sum(score ∘ (r -> Iterators.partition(r, length(r)÷2)), rucksacks)
 ans₂ = sum(score, Iterators.partition(rucksacks, 3))
+@info "Solution to Day 3" ans₁ ans₂

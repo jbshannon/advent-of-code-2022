@@ -10,3 +10,4 @@ overlaps(p) = ((a, b) = p; !isempty(a ∩ b))
 
 ans₁ = sum(either_contains, paired)
 ans₂ = sum(overlaps, paired)
+@info "Solution to Day 4" ans₁ ans₂

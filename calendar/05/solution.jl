@@ -37,3 +37,4 @@ end
 
 ans₁ = follow_instructions1!(deepcopy(stacks), instructions) .|> last |> String
 ans₂ = follow_instructions2!(deepcopy(stacks), instructions) .|> last |> String
+@info "Solution to Day 5" ans₁ ans₂

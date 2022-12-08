@@ -10,6 +10,10 @@ function countunique!(out, seen, itr)
     return length(out)
 end
 
+# const out = Set{Char}()
+# const seen = Set{Char}()
+# countunique(itr) = countunique!(out, seen, itr)
+
 function read_signal(packet_length)
     out = Set{Char}()
     seen = Set{Char}()
@@ -32,3 +36,4 @@ end
 
 ans₁ = open(read_signal(4), "input.txt")
 ans₂ = open(read_signal(14), "input.txt")
+@info "Solution to Day 6" ans₁ ans₂
